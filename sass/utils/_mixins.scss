@@ -1,0 +1,15 @@
+@mixin font($fs: 14px, $lh: 1.17, $ls: 0.03em, $fw: 700) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}
+@mixin border($b: 1px solid rgba(33, 33, 33, 0.2), $br: 4px) {
+  border: $b;
+  border-radius: $br;
+}
+@mixin transition($tp: color) {
+  transition-property: $tp;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
