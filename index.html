@@ -34,6 +34,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="header-burger" data-menu-button>
+                <svg class="header-burger_icon">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
             <ul class="contact list">
                 <li class="contact__list">
                     <a class="contact__link link" href="mailto:info@devstudio.com">
@@ -51,6 +56,51 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu_container">
+                <button type="button" class="mobile-menu_close-btn" data-menu-close>
+                    <svg class="mobile-menu_icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu_nav list">
+                    <li class="mobile-menu_item">
+                        <a href="./index.html" class="mobile-menu_link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="./portfolio.html" class="mobile-menu_link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="" class="mobile-menu_link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu_contact list">
+                    <li class="mobile-menu_contact-list">
+                        <a class="mobile-menu_contact-link link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu_contact-list">
+                        <a class="mobile-menu_contact-link link mail"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-link list">
+                        <a class="mobile-social-link_icon link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-social-link list">
+                        <a class="mobile-social-link_icon link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-social-link list">
+                        <a class="mobile-social-link_icon link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-social-link list">
+                        <a class="mobile-social-link_icon link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+                <ul class="li"></ul>
+            </div>
+        </div>
+
     </header>
     <main>
         <section class="hero">
@@ -489,7 +539,7 @@
             </form>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__close-button button" type="button" data-modal-close>
                 <svg width="11px" height="11px">
@@ -538,8 +588,9 @@
                 <button type="submit" class="modal-form__button button">Отправить</button>
             </form>
         </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

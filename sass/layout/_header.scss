@@ -1,5 +1,7 @@
 .header-container {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header-container {
@@ -96,7 +98,21 @@
 .contact__link {
   @include font(14px, 1.14, 0.02em, 500);
   font-family: var(--main-font);
-  color: var(--secondary-color);
+  color: var(--body-color);
+}
+.header-burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .header-burger {
+   display: none;
+  }
+}
+.header-burger_icon {
+  width: 24px;
+  height: 16px;
 }
 .contact {
   display: none;

@@ -21,6 +21,12 @@
 .logo-address {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .logo-address {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 .address-list__link {
   margin-bottom: 8px;
 }
