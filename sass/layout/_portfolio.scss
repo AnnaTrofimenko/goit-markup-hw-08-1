@@ -44,7 +44,7 @@
 .button-list_link {
   margin-bottom: 15px;
 
-    &:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 8px;
   }
 }
@@ -60,7 +60,7 @@
   // margin-bottom: calc(-1 * var(--indent));
 }
 @media screen and (min-width: 768px) {
-    .project {
+  .project {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -119,7 +119,7 @@
   border-top: transparent;
 }
 .project_title {
-  @include font(18px, 2, 0.06em);
+  @include font(18px, 2, 0.03em);
   font-family: var(--main-font);
   color: var(--body-color);
   margin-bottom: 4px;

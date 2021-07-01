@@ -460,6 +460,10 @@ body {
   color: var(--accent-color);
 }
 
+.mobile-menu_contact-list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mail {
   font-size: 24px;
   color: var(--secondary-color);
@@ -473,6 +477,8 @@ body {
 
 .mobile-social-link:not(:last-child) {
   margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-social-link_icon {
@@ -1419,7 +1425,7 @@ body {
 .project_title {
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-family: var(--main-font);
   color: var(--body-color);
