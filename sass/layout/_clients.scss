@@ -1,11 +1,11 @@
-.clients-box {
+.client {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: -15px
+  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
-  .clients-box {
+  .client {
     flex-wrap: nowrap;
   }
 }
@@ -19,29 +19,32 @@
     margin-bottom: 50px;
   }
 }
-.client {
+.client__list {
+  width: 100%;
   flex-basis: calc((100% - 2 * 30px) / 2);
   margin: 15px;
 }
 @media screen and (min-width: 768px) {
-  .client {
+  .client__list {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .client {
+  .client__list {
     flex-wrap: nowrap;
     flex-basis: 100%;
     margin: 15px;
   }
 }
+
 .client__link {
   @include border(1px solid var(--icon-color));
   @include transition(border-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 92px;
 
   &:hover,
   &:focus {

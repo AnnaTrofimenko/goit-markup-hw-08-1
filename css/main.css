@@ -76,7 +76,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -685,6 +685,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
+  color: #757575;
 }
 
 .contact__link:hover, .contact__link:focus {
@@ -747,20 +748,20 @@ body {
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url("../images/hero/mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1199px;
-    background-image: url("../images/hero/tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero/tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet@2x.jpg");
   }
 }
 
@@ -768,7 +769,7 @@ body {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/hero/desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop.jpg");
     max-width: 1600px;
     margin: auto;
   }
@@ -776,7 +777,7 @@ body {
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/hero/desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop@2x.jpg");
   }
 }
 
@@ -994,7 +995,7 @@ body {
   padding: 30px 32px;
 }
 
-.clients-box {
+.client {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1002,7 +1003,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .clients-box {
+  .client {
     flex-wrap: nowrap;
   }
 }
@@ -1022,20 +1023,21 @@ body {
   }
 }
 
-.client {
+.client__list {
+  width: 100%;
   flex-basis: calc((100% - 2 * 30px) / 2);
   margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .client {
+  .client__list {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .client {
+  .client__list {
     flex-wrap: nowrap;
     flex-basis: 100%;
     margin: 15px;
@@ -1051,6 +1053,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 92px;
 }
 
 .client__link:hover, .client__link:focus {
@@ -1083,12 +1086,13 @@ body {
 
 .for-tablet {
   display: block;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .for-tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
@@ -1097,10 +1101,17 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-address {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo-address {
     text-align: left;
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1154,11 +1165,6 @@ body {
   }
 }
 
-.footer-social-block {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .footer-social-block {
     margin-top: 0;
@@ -1168,7 +1174,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-social-block {
-    margin-left: 70px;
     margin-right: 93px;
   }
 }
@@ -1349,6 +1354,10 @@ body {
   }
 }
 
+.margin {
+  margin-bottom: 0;
+}
+
 .project {
   display: block;
 }
@@ -1358,12 +1367,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-bottom: -30px;
   }
 }
 
 .project__list {
   display: flex;
+}
+
+.project__list:not(:last-child) {
   margin-bottom: 30px;
 }
 

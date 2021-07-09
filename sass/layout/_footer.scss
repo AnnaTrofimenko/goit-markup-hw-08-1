@@ -10,21 +10,28 @@
 }
 .for-tablet {
   display: block;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .for-tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 }
 .logo-address {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .logo-address {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo-address {
     text-align: left;
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 .address-list__link {
@@ -35,7 +42,6 @@
     margin-bottom: 9px;
   }
 }
-
 .logo-footer {
   @include transition(color);
   color: var(--white-color);
@@ -69,10 +75,6 @@
     align-items: baseline;
   }
 }
-.footer-social-block {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 768px) {
   .footer-social-block {
     margin-top: 0;
@@ -81,7 +83,6 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-social-block {
-    margin-left: 70px;
     margin-right: 93px;
   }
 }
@@ -93,8 +94,8 @@
   fill: var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
-  .footer-social-text { 
-    text-align: left;   
+  .footer-social-text {
+    text-align: left;
   }
 }
 .footer-social-list {
@@ -110,19 +111,19 @@
   fill: var(--white-color);
 }
 .email-form__text {
-    @include font();
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-bottom: 20px;
-  }
+  @include font();
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1200px) {
   .email-form__text {
     text-align: left;
   }
 }
 .email-form__block {
-    display: block;
+  display: block;
 }
 @media screen and (min-width: 1200px) {
   .email-form__block {
@@ -153,7 +154,7 @@
 @media screen and (min-width: 1200px) {
   .email-form__input {
     width: 358px;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);

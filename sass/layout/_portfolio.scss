@@ -53,23 +53,25 @@
     margin-bottom: 0;
   }
 }
+.margin {
+  margin-bottom: 0;
+}
 .project {
   display: block;
-  // flex-wrap: wrap;
-  // margin-right: calc(-1 * var(--indent));
-  // margin-bottom: calc(-1 * var(--indent));
 }
 @media screen and (min-width: 768px) {
   .project {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-bottom: -30px;
   }
 }
 .project__list {
   display: flex;
-  margin-bottom: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .project__list {
