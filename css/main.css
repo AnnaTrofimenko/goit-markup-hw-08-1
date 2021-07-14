@@ -1098,6 +1098,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .for-tablet {
+    margin-bottom: 0;
+  }
+}
+
 .logo-address {
   margin-bottom: 60px;
 }
@@ -1383,6 +1389,9 @@ body {
   .project__list {
     flex-basis: calc((100% - 2 * 30) / 2);
     margin: 15px;
+  }
+  .project__list:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
